@@ -1,8 +1,11 @@
-# Part of the Carbon Language project, under the Apache License v2.0 with LLVM
-# Exceptions. See /LICENSE for license information.
-# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
-
 [tool.black]
+# Set the maximum line length to 80 characters.
 line-length = 80
+
+# Specify the target Python versions for formatting. You can include the ones you need.
+# For this example, we've included Python 3.6, 3.7, and 3.8.
 target-version = ['py36', 'py37', 'py38']
+
+# Define a regular expression to specify which files should be included for formatting.
+# Here, we include files with a '.py' or '.pyi' extension.
 include = '\.pyi?$'
